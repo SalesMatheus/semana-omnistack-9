@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { withNavigation } from 'react-navigation';
 import { View, StyleSheet, Text, FlatList, Image, TouchableOpacity } from 'react-native';
 
 import api from '../services/api';
 
-export default function SpotList({ tech }) {
+function SpotList({ tech, navigation }) {
     const [spots, setSpots] = useState([]);
 
     useEffect(() => {
@@ -17,6 +18,10 @@ export default function SpotList({ tech }) {
 
         loadSpots();
     }, []);
+
+    function handleNavigate(id) {
+        navigation.navigate('Book', { id });
+    }
 
     return (
         <View style={styles.container}>
@@ -33,7 +38,7 @@ export default function SpotList({ tech }) {
                         <Image style={styles.thunbnaill} source={{ uri: item.thunbnaill_url.replace('localhost', '192.168.0.22') }} />
                         <Text style={styles.company}>{item.company}</Text>
                         <Text style={styles.price}>{item.price ? `R$${item.price}/dia` : 'Gratuito'}</Text>
-                        <TouchableOpacity onPress={() => { }} style={styles.button}>
+                        <TouchableOpacity onPress={() => handleNavigate(item._id)} style={styles.button}>
                             <Text style={styles.buttonText}>Solicitar Reserva</Text>
                         </TouchableOpacity>
 
@@ -103,3 +108,5 @@ const styles = StyleSheet.create({
     },
 
 });
+
+export default withNavigation(SpotList);
