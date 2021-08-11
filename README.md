@@ -6,7 +6,7 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#API">API</a>
+  <a href="#-API">API</a>
 </p>
 
 <br>
@@ -15,7 +15,7 @@
   <img alt="Frontend" src="github/aircnc.png" width="100%">
 </p>
 
-## :tecnologias: Tecnologias
+## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -29,5 +29,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Aircnc é um projeto que visa conectar empresas que querem abrir spots e desenvolvedores que procuram um lugar para trocar ideias com devs, conhecer a empresa e trabalhar lá por um período.
 
 
-## 🔖 API Documentation
+## 🔖 API
 https://documenter.getpostman.com/view/5638172/SVtR1VVC?version=latest
