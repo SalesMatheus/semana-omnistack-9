@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Aircnc" title="#delicinha" src=".github/logo.png" width="250px" />
+    <img alt="Aircnc" title="#delicinha" src="github/logo.png" width="250px" />
 </h1>
 
 
@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="Frontend" src=".github/aircnc.png" width="100%">
+  <img alt="Frontend" src="github/aircnc.png" width="100%">
 </p>
 
 ## :tecnologias: Tecnologias
